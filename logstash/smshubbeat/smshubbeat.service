@@ -1,0 +1,11 @@
+[Unit]
+Description=smshubbeat
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/share/smshubbeat/bin/smshubbeat -c /etc/smshubbeat/smshubbeat.yml -path.home /usr/share/smshubbeat -path.config /etc/smshubbeat -path.data /var/lib/smshubbeat -path.logs /var/log/smshubbeat
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

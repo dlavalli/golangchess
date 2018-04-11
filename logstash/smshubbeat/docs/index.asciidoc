@@ -1,0 +1,5 @@
+= Smshubbeat Docs
+
+Welcome to the Smshubbeat documentation.
+
+

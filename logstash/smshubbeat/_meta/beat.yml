@@ -1,0 +1,33 @@
+################### Smshubbeat Configuration Example #########################
+
+############################# Smshubbeat ######################################
+
+# Would normally call as:  ./smshubbeat -c smshubbeat.yml -e -d "*"    
+# or remove the -d "*" and configure logging in this file
+
+smshubbeat:
+
+    beatsettings:
+        # Defines how often an event is sent to the output
+        period: 5
+
+    redissettings:
+        # Redis host we connect to
+        host: "localhost"
+
+        # Redis port we connect to
+        port: 6379
+        
+        # Db id to monitor
+        dbid: 0
+
+        # LUA script to execute remotely on redis
+        luascript: "/etc/smshubbeat/smshubbeat.lua"
+        
+        # Authentication section
+        auth:
+            # Authentication required
+            required: false
+        
+            # Authentication password
+            requiredpass: ""

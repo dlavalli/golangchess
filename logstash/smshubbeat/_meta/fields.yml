@@ -1,0 +1,63 @@
+- key: smshubbeat
+  title: smshubbeat
+  description:
+  fields:
+    - name: host
+      type: text
+      required: true
+      description: >
+        The hostname/ip address of the redis server
+   
+    - name: port
+      type: integer
+      required: true
+      description: >
+        The port of the redis server
+
+    - name: dbid
+      type: integer
+      required: true
+      description: >
+        The redis db id to monitor
+
+    - name: luascript
+      type: text
+      required: true
+      description: >
+        The script to execute to query redis
+
+    - name: network
+      type: text
+      required: true
+      description: >
+        The type of connection iprotocol to use (tcp)
+
+    - name: maxconn
+      type: integer
+      required: false
+      description: >
+        Max number of redis connections available in the pool
+
+    - name: auth
+      type: group
+      required: false
+      description: >
+        Authentication information for redis connectivity
+      fields:
+        - name: required
+          type: boolean
+          required: true
+          description: >
+            Is redis authentication required
+
+        - name: requiredpass
+          type: text
+          required: false
+          description: >
+            Password to use for redis authentication
+
+    - name: period
+      type: integer
+      required: true
+      description: >
+        Frequency of redis kpi polling in seconds

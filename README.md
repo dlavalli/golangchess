@@ -1,2 +1,2 @@
 # golangchess
-Sample golang projects
+golang projects

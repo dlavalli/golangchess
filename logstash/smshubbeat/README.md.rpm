@@ -1,0 +1,10 @@
+# Welcome to smshubbeat 1.0
+
+smshubbeat sends kpi to elasticsearch/logstash.
+
+## Getting Started
+
+To get started with smshubbeat, you need to set up elasticsearch/logstash on your localhost first. After that, start smshubbeat with:
+
+     ./smshubbeat  -c smshubbeat.yml -e
+
