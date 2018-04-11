@@ -3,7 +3,7 @@
 Welcome to Smshubbeat.
 
 Ensure that this folder is at the following location:
-`${GOPATH}/github.com/tata/smshubbeat`
+`${GOPATH}/github.com/dlavalli/smshubbeat`
 
 ## Getting Started with Smshubbeat
 
@@ -24,7 +24,7 @@ It will create a clean git history for each major step. Note that you can always
 To push Smshubbeat in the git repository, run the following commands:
 
 ```
-git remote set-url origin https://github.com/tata/smshubbeat
+git remote set-url origin https://github.com/dlavalli/smshubbeat
 git push origin master
 ```
 
@@ -99,9 +99,9 @@ make clean
 To clone Smshubbeat from the git repository, run the following commands:
 
 ```
-mkdir -p ${GOPATH}/github.com/tata/smshubbeat
-cd ${GOPATH}/github.com/tata/smshubbeat
-git clone https://github.com/tata/smshubbeat
+mkdir -p ${GOPATH}/github.com/dlavalli/smshubbeat
+cd ${GOPATH}/github.com/dlavalli/smshubbeat
+git clone https://github.com/dlavalli/smshubbeat
 ```
 
 

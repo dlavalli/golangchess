@@ -3,9 +3,9 @@ Version:    %{version}
 Release:    %{buildnumber}
 Summary:    smshub 3 redis kpi logstash input beat	
 Group:		Applications/System
-License:	TATA
+License:	dlavalli
 Source:     smshubbeat-%{version}.tgz	
-Packager:   Daniel Lavalliere daniel.lavalliere@tatacommunications.com
+Packager:   Daniel Lavalliere lavalliere.daniel@gmail.com
 BuildRoot:  /var/tmp/%{name}-buildroot
 
 

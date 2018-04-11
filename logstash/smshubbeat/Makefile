@@ -1,5 +1,5 @@
 BEAT_NAME=smshubbeat
-BEAT_PATH=github.com/tata/smshubbeat
+BEAT_PATH=github.com/dlavalli/smshubbeat
 BEAT_GOPATH=$(firstword $(subst :, ,${GOPATH}))
 BEAT_URL=https://${BEAT_PATH}
 SYSTEM_TESTS=false
