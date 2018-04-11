@@ -5,7 +5,7 @@ import (
 
 	"github.com/elastic/beats/libbeat/beat"
 
-	"github.com/dlavalli/smshubbeat/beater"
+	"github.com/dlavalli/golangchest/logstash/smshubbeat/beater"
 )
 
 func main() {

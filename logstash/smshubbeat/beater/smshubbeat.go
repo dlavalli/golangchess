@@ -13,7 +13,7 @@ import (
 	"github.com/elastic/beats/libbeat/logp"
 	"github.com/elastic/beats/libbeat/publisher"
 	"github.com/garyburd/redigo/redis"
-	"github.com/dlavalli/smshubbeat/config"
+	"github.com/dlavalli/golangchest/logstash/smshubbeat/config"
 )
 
 type Smshubbeat struct {

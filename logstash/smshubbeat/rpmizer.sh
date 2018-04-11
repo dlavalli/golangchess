@@ -13,13 +13,13 @@ tmpdir=_tmp
 libname=smshubbeat-$1
 
 homesrc=`pwd`
-mkdir -p $tmpdir/$libname/src/github.com/dlavalli/smshubbeat
-cp -Rf beater/ $tmpdir/$libname/src/github.com/dlavalli/smshubbeat/
-cp -Rf config/ $tmpdir/$libname/src/github.com/dlavalli/smshubbeat/
-cp -Rf main.go $tmpdir/$libname/src/github.com/dlavalli/smshubbeat/
-cp -Rf main_test.go $tmpdir/$libname/src/github.com/dlavalli/smshubbeat/
-cp -Rf Makefile $tmpdir/$libname/src/github.com/dlavalli/smshubbeat/
-cp -Rf vendor/ $tmpdir/$libname/src/github.com/dlavalli/smshubbeat/
+mkdir -p $tmpdir/$libname/src/github.com/dlavalli/golangchest/logstash/smshubbeat
+cp -Rf beater/ $tmpdir/$libname/src/github.com/dlavalli/golangchest/logstash/smshubbeat/
+cp -Rf config/ $tmpdir/$libname/src/github.com/dlavalli/golangchest/logstash/smshubbeat/
+cp -Rf main.go $tmpdir/$libname/src/github.com/dlavalli/golangchest/logstash/smshubbeat/
+cp -Rf main_test.go $tmpdir/$libname/src/github.com/dlavalli/golangchest/logstash/smshubbeat/
+cp -Rf Makefile $tmpdir/$libname/src/github.com/dlavalli/golangchest/logstash/smshubbeat/
+cp -Rf vendor/ $tmpdir/$libname/src/github.com/dlavalli/golangchest/logstash/smshubbeat/
 
 mkdir -p rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
 \cp -f $specname rpmbuild/SPECS
@@ -28,5 +28,5 @@ rm -rf $tmpdir
 
 cd rpmbuild
 githome=`pwd`/BUILD/$libname
-beathome=src/github.com/dlavalli/smshubbeat
+beathome=src/github.com/dlavalli/golangchest/logstash/smshubbeat
 rpmbuild --define "homesrc $homesrc" --define "_topdir `pwd`" --define "githome $githome" --define "buildpath $githome/$beathome" --define "version $1" --define "buildnumber $2" --define "debug_package %{nil}" -ba SPECS/$specname
